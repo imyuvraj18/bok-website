@@ -1,0 +1,36 @@
+.tech-icons span { display: inline-block; margin: 4px 6px 0 0; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); color: var(--muted); }
+
+.course-card h3 { margin: 0 0 8px; }
+.course-meta { display: flex; gap: 8px; color: var(--muted); font-size: 14px; margin: 8px 0; }
+.price { color: var(--primary); font-weight: 600; }
+
+.cta { display: flex; gap: 12px; justify-content: center; }
+
+/* Soft fade-in for sections */
+[data-aos] { will-change: transform, opacity; }
+
+/* Enhanced course cards */
+.course-card { padding: 0; overflow: hidden; }
+.course-thumb { position: relative; height: 140px; background: #0f1220; border-bottom: 1px solid var(--border); }
+.course-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; display: block; }
+.badge { position: absolute; top: 12px; left: 12px; padding: 6px 10px; border-radius: 999px; font-size: 12px; color: white; background: rgba(0,123,255,0.9); box-shadow: 0 0 0 2px rgba(0,0,0,0.2); }
+.badge-ict { background: rgba(0,123,255,0.9); }
+.badge-prog { background: rgba(0,180,120,0.9); }
+.course-body { padding: 16px 16px 12px; }
+.course-actions { display: flex; gap: 10px; padding: 0 16px 16px; }
+
+/* Feature card accent effects */
+.card-accent-ict, .card-accent-prog, .card-accent-portal { position: relative; overflow: hidden; }
+.card-accent-ict::before, .card-accent-prog::before, .card-accent-portal::before {
+  content: ""; position: absolute; inset: -1px; border-radius: 16px; padding: 1px;
+  background: linear-gradient(135deg, rgba(0,123,255,0.8), rgba(0,0,0,0) 60%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+.card-accent-prog::before { background: linear-gradient(135deg, rgba(0,180,120,0.85), rgba(0,0,0,0) 60%); }
+.card-accent-portal::before { background: linear-gradient(135deg, rgba(255,160,0,0.9), rgba(0,0,0,0) 60%); }
+.card-accent-ict:hover { box-shadow: 0 8px 28px rgba(0,123,255,0.18); }
+.card-accent-prog:hover { box-shadow: 0 8px 28px rgba(0,180,120,0.18); }
+.card-accent-portal:hover { box-shadow: 0 8px 28px rgba(255,160,0,0.2); }
+
+

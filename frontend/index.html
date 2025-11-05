@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bytes of Knowledge Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand"><img src="assets/img/logo.jpg" alt="BOK logo" class="brand-logo"> <span>Bytes of Knowledge Academy</span></a>
+        <nav>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" style="--hero-bg: url('../img/hero.jpeg');">
+        <div class="container hero-inner" data-aos="fade-up">
+          <h1>Empowering Future Tech Minds</h1>
+          <p>Industry‑aligned ICT and Programming for Grades 6–A/L and beginners.</p>
+          <div class="cta">
+            <a href="register.html" class="btn btn-primary">Apply Now</a>
+            <a href="courses.html" class="btn btn-secondary">Explore Courses</a>
+          </div>
+        </div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Why Learn at Bytes of Knowledge</h2>
+            <p>Practical teaching, modern content, supportive learning.</p>
+          </div>
+          <div class="grid-3">
+            <div class="card card-accent-ict" data-aos="fade-right">
+              <h3>ICT for Schools</h3>
+              <p>Curriculum‑aligned ICT classes from Grade 6 to A/L with projects.</p>
+            </div>
+            <div class="card card-accent-prog" data-aos="fade-up">
+              <h3>Programming Basics</h3>
+              <p>C, C#, Java, Python, HTML, CSS, and JavaScript—foundation to first apps.</p>
+            </div>
+            <div class="card card-accent-portal" data-aos="fade-left">
+              <h3>Student Portal</h3>
+              <p>Login for announcements, materials, and schedules (coming soon).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container stats" data-aos="fade-up">
+          <div class="stat"><h3>10+ </h3><p>Courses</p></div>
+          <div class="stat"><h3>12–16 </h3><p>Weeks / Program</p></div>
+          <div class="stat"><h3>LKR 14k–22k</h3><p>Affordable Fees</p></div>
+          <div class="stat"><h3>1:1 </h3><p>Guidance</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured Courses</h2>
+            <p>A quick look at what you can learn with us.</p>
+          </div>
+          <div id="featured-grid" class="grid-3"></div>
+          <div class="cta" style="margin-top:16px">
+            <a href="courses.html" class="btn btn-secondary">See all courses</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Bytes of Knowledge Academy</p>
+        <p class="web"><span id="year"></span> Web solutions by GK Yuvraj</p>
+      </div>
+    </footer>
+
+    <script>
+      window.__API_BASE__ = window.__API_BASE__ || 'http://localhost:8080';
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-TYb7uGkAqN0X6v0e5iFzqQx5o1V2XbM0Q6y0hQZ+2l3W6wZp2YtRr8m0C+K3lZ8cWwP0F0bH7Vw0ZlXQ7m4mDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+  </body>
+  </html>
+
+

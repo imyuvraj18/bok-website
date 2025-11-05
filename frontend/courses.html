@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses • Bytes of Knowledge Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+  <body data-page="courses">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand"><img src="assets/img/logo.jpg" alt="BOK logo" class="brand-logo"> <span>Bytes of Knowledge Academy</span></a>
+        <nav>
+          <a href="about.html">About</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="btn btn-primary" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Courses & Pricing</h1>
+          <p>Discover ICT pathways and beginner programming tracks.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <div class="filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="ICT">ICT</button>
+            <button class="chip" data-filter="Programming">Programming</button>
+          </div>
+          <div id="courses-grid" class="grid-3"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Bytes of Knowledge Academy</p>
+      </div>
+    </footer>
+
+    <script>
+      window.__API_BASE__ = window.__API_BASE__ || 'http://localhost:8080';
+    </script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
